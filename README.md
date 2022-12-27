@@ -1,2 +1,2 @@
 # nvim
-Noevim Config
+Neovim Config
