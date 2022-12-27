@@ -1,2 +1,3 @@
 # nvim
-Neovim Config
+
+This is my personal `nvim` setup.
