@@ -1,3 +1,12 @@
+# [0.4.0](https://github.com/sacklippe/nvim/compare/v0.3.0...v0.4.0) (2023-01-06)
+
+
+### Features
+
+* additional keymappings ([c8007e5](https://github.com/sacklippe/nvim/commit/c8007e5f0acb1e073fb4451aea681c71eb70acfa))
+
+
+
 # [0.3.0](https://github.com/sacklippe/nvim/compare/v0.2.0...v0.3.0) (2023-01-03)
 
 
