@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/sacklippe/nvim/compare/v0.2.0...v0.3.0) (2023-01-03)
+
+
+### Features
+
+* add shorcuts for chmod +x/copy/paste ([aef779b](https://github.com/sacklippe/nvim/commit/aef779bb1ddcc790a7ad9d09404706b0caf67905))
+
+
+
 # [0.2.0](https://github.com/sacklippe/nvim/compare/v0.1.0...v0.2.0) (2022-12-31)
 
 
