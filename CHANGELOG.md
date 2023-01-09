@@ -1,18 +1,11 @@
-# [0.4.0](https://github.com/sacklippe/nvim/compare/v0.3.0...v0.4.0) (2023-01-06)
+# [0.5.0](https://github.com/sacklippe/nvim/compare/v0.2.0...v0.5.0) (2023-01-09)
 
 
 ### Features
 
-* additional keymappings ([c8007e5](https://github.com/sacklippe/nvim/commit/c8007e5f0acb1e073fb4451aea681c71eb70acfa))
-
-
-
-# [0.3.0](https://github.com/sacklippe/nvim/compare/v0.2.0...v0.3.0) (2023-01-03)
-
-
-### Features
-
+* add keymap to create new tmux window ([70d6ae5](https://github.com/sacklippe/nvim/commit/70d6ae51b767a9d566a322c3d75e216a62b6ec8c))
 * add shorcuts for chmod +x/copy/paste ([aef779b](https://github.com/sacklippe/nvim/commit/aef779bb1ddcc790a7ad9d09404706b0caf67905))
+* additional keymappings ([dc59330](https://github.com/sacklippe/nvim/commit/dc593300de21651f5d0e5638d62b8f245a70a6bf))
 
 
 
