@@ -1,3 +1,12 @@
+## [0.5.1](https://github.com/sacklippe/nvim/compare/v0.5.0...v0.5.1) (2023-01-09)
+
+
+### Bug Fixes
+
+* resolve keymap conflict ([bce9e4d](https://github.com/sacklippe/nvim/commit/bce9e4d4a2a8467092bead217a55dbff689e90b4))
+
+
+
 # [0.5.0](https://github.com/sacklippe/nvim/compare/v0.2.0...v0.5.0) (2023-01-09)
 
 
