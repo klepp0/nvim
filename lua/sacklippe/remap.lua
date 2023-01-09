@@ -19,7 +19,7 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- execution
-vim.keymap.set("n", "<C-R>", ":sp <CR> :term python % <CR>")
+vim.keymap.set("n", "<C-P>", ":sp <CR> :term python % <CR>")
 vim.keymap.set("n", "<C-W>", ":bd!<CR>")
 
 -- copy/paste to clipboard
