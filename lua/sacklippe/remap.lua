@@ -29,3 +29,6 @@ vim.api.nvim_set_keymap("", "<leader>d", "+d", { silent = true })
 vim.api.nvim_set_keymap("", "<leader>D", "+D", { silent = true })
 vim.api.nvim_set_keymap("", "<leader>p", "+p", { silent = true })
 vim.api.nvim_set_keymap("", "<leader>P", "+P", { silent = true })
+
+-- tmux open new window
+vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww<CR>")
