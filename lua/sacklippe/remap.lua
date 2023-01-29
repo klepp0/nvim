@@ -3,13 +3,13 @@ vim.g.mapleader = " "
 -- :Explore
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
--- center cursor 
-vim.keymap.set({"n", "v"}, "<C-d>", "<C-d>zz")
-vim.keymap.set({"n", "v"}, "<C-u>", "<C-u>zz")
+-- center cursor
+vim.keymap.set({ "n", "v" }, "<C-d>", "<C-d>zz")
+vim.keymap.set({ "n", "v" }, "<C-u>", "<C-u>zz")
 
 -- tab indentation
-vim.keymap.set({"n", "v"}, "<tab>", "><CR>", { silent = true })
-vim.keymap.set({"n", "v"}, "<s-tab>", "<<CR>", { silent = true })
+vim.keymap.set({ "n", "v" }, "<tab>", "><CR>", { silent = true })
+vim.keymap.set({ "n", "v" }, "<s-tab>", "<<CR>", { silent = true })
 
 -- move highlighted lines
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -19,16 +19,19 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- execution
-vim.keymap.set("n", "<C-P>", ":sp <CR> :term python % <CR>")
-vim.keymap.set("n", "<C-W>", ":bd!<CR>")
+vim.keymap.set("n", "<C-p>", ":sp <CR> :term python % <CR>")
+vim.keymap.set("n", "<C-w>", ":bd!<CR>")
+
+-- to also apply changes of mass selection
+vim.keymap.set("v", "<C-c", "<Esc>")
 
 -- copy/paste to clipboard
-vim.api.nvim_set_keymap("", "<leader>y", "+y", { silent = true })
-vim.api.nvim_set_keymap("", "<leader>Y", "+Y", { silent = true })
-vim.api.nvim_set_keymap("", "<leader>d", "+d", { silent = true })
-vim.api.nvim_set_keymap("", "<leader>D", "+D", { silent = true })
-vim.api.nvim_set_keymap("", "<leader>p", "+p", { silent = true })
-vim.api.nvim_set_keymap("", "<leader>P", "+P", { silent = true })
+vim.keymap.set({ "n", "v" }, "<leader>y", '"+y')
+vim.keymap.set("n", "<leader>Y", '"+Y')
+vim.keymap.set({ "n", "v" }, "<leader>d", '"_d')
+vim.keymap.set("x", "<leader>p", '"_P')
 
--- tmux open new window
-vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww<CR>")
+-- open new tmux window
+vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww<CR>", { desc = "Open [F]ull Screen Window" })
+vim.keymap.set("n", "<C-s>", "<cmd>silent !tmux split-window -v<CR>", { desc = "[S]plit Window (Vertically)" })
+vim.keymap.set("n", "<C-h>", "<cmd>silent !tmux split-window -h<CR>", { desc = "Split Window ([H]orizontally)" })
