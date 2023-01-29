@@ -8,8 +8,10 @@ vim.keymap.set({ "n", "v" }, "<C-d>", "<C-d>zz")
 vim.keymap.set({ "n", "v" }, "<C-u>", "<C-u>zz")
 
 -- tab indentation
-vim.keymap.set({ "n", "v" }, "<tab>", "><CR>", { silent = true })
-vim.keymap.set({ "n", "v" }, "<s-tab>", "<<CR>", { silent = true })
+vim.keymap.set("n", "<tab>", ">>", { silent = true })
+vim.keymap.set("n", "<S-tab>", "<<", { silent = true })
+vim.keymap.set("v", "<tab>", ">gv", { silent = true })
+vim.keymap.set("v", "<S-tab>", "<gv", { silent = true })
 
 -- move highlighted lines
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
