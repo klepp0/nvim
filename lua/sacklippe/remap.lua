@@ -1,3 +1,5 @@
+vim.g.mapleader = " "
+
 -- :Explore
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
@@ -6,10 +8,10 @@ vim.keymap.set({ "n", "v" }, "<C-d>", "<C-d>zz")
 vim.keymap.set({ "n", "v" }, "<C-u>", "<C-u>zz")
 
 -- tab indentation
-vim.keymap.set("n", "<tab>", ">>", { silent = true })
-vim.keymap.set("n", "<S-tab>", "<<", { silent = true })
-vim.keymap.set("v", "<tab>", ">gv", { silent = true })
-vim.keymap.set("v", "<S-tab>", "<gv", { silent = true })
+vim.keymap.set("n", "<tab>", ">>4l", { silent = true })
+vim.keymap.set("n", "<S-tab>", "<<4h", { silent = true })
+vim.keymap.set("v", "<tab>", ">gvl", { silent = true })
+vim.keymap.set("v", "<S-tab>", "<gvh", { silent = true })
 
 -- move highlighted lines
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -19,7 +21,7 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- execution
-vim.keymap.set("n", "<C-p>", ":sp <CR> :term python % <CR>")
+vim.keymap.set("n", "<C-p>", ":sp <CR> :term poetry run python % <CR>")
 vim.keymap.set("n", "<C-w>", ":bd!<CR>")
 
 -- to also apply changes of mass selection
