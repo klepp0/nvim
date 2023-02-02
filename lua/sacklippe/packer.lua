@@ -11,13 +11,13 @@ require("packer").startup(function(use)
 	-- Packer can manage itself
 	use("wbthomason/packer.nvim")
 
-	--- TELESCOPE ---
+	--- Telescope ---
 	-- Fuzzy Finder (files, lsp, etc)
 	use({ "nvim-telescope/telescope.nvim", branch = "0.1.x", requires = { "nvim-lua/plenary.nvim" } })
 	-- Fuzzy Finder Algorithm which requires local dependencies to be built. Only load if `make` is available
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make", cond = vim.fn.executable("make") == 1 })
 
-	--- NULL-LS ---
+	--- Null-LS ---
 	use("jose-elias-alvarez/null-ls.nvim")
 
 	--- LSP Zero ---
@@ -43,4 +43,7 @@ require("packer").startup(function(use)
 			{ "rafamadriz/friendly-snippets" }, -- Optional
 		},
 	})
+
+	--- Harpoon ---
+	use({ "theprimeagen/harpoon", requires = { "nvim-lua/plenary.nvim" } })
 end)
