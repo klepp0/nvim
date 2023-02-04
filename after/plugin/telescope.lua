@@ -1,6 +1,3 @@
--- requires installations:
--- $ brew install ripgrep
--- $ brew install fd
 local builtin = require("telescope.builtin")
 
 -- [[ Configure Telescope ]]
