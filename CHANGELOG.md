@@ -1,3 +1,21 @@
+# [0.7.0](https://github.com/sacklippe/nvim/compare/v0.6.0...v0.7.0) (2023-02-17)
+
+
+### Bug Fixes
+
+* consistent keymaps ([9f2af46](https://github.com/sacklippe/nvim/commit/9f2af46d01e10a891b18fa1ff585f0157784d0e8))
+* false mapping of '<leader>4' ([702af29](https://github.com/sacklippe/nvim/commit/702af29f9398af3f42c44500fc7ad32dec3592b1))
+* remove invalid language server ([924c960](https://github.com/sacklippe/nvim/commit/924c960159cb7a5f16e1676d929d0885020c80a2))
+
+
+### Features
+
+* add aditional remaps ([daae3d1](https://github.com/sacklippe/nvim/commit/daae3d103db6c6a2fcfc560667e335e62bf24601))
+* add harpoon ([47675bc](https://github.com/sacklippe/nvim/commit/47675bc0ba241f532d2014dc8198de544eb9bca1))
+* first lsp configuration with lsp zero ([3f30878](https://github.com/sacklippe/nvim/commit/3f3087876fa977407f3ee71b2e3e727f1718df9a))
+
+
+
 # [0.6.0](https://github.com/sacklippe/nvim/compare/v0.5.1...v0.6.0) (2023-02-02)
 
 
@@ -40,16 +58,6 @@
 ### Features
 
 * comstomise editor settings ([d18dda2](https://github.com/sacklippe/nvim/commit/d18dda2b87b899bb912b180e3b1fe8812c8e56e4))
-
-
-
-# [0.1.0](https://github.com/sacklippe/nvim/compare/e385ea0d7c364aa7f932adba64a118bedd589501...v0.1.0) (2022-12-27)
-
-
-### Features
-
-* add default config from kickstart.nvim ([e385ea0](https://github.com/sacklippe/nvim/commit/e385ea0d7c364aa7f932adba64a118bedd589501))
-* add remaps to quickly access explore command, center cursor automatically ([5b79b43](https://github.com/sacklippe/nvim/commit/5b79b4372c3abec50853f524d4d1241a16ef5216))
 
 
 
