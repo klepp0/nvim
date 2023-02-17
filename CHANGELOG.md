@@ -1,3 +1,12 @@
+# [0.8.0](https://github.com/sacklippe/nvim/compare/v0.7.0...v0.8.0) (2023-02-17)
+
+
+### Features
+
+* add remps for harpoons 5...10 ([bb96379](https://github.com/sacklippe/nvim/commit/bb963799b3e2f8e0d9f737b64052adf068100600))
+
+
+
 # [0.7.0](https://github.com/sacklippe/nvim/compare/v0.6.0...v0.7.0) (2023-02-17)
 
 
@@ -49,15 +58,6 @@
 * add keymap to create new tmux window ([70d6ae5](https://github.com/sacklippe/nvim/commit/70d6ae51b767a9d566a322c3d75e216a62b6ec8c))
 * add shorcuts for chmod +x/copy/paste ([aef779b](https://github.com/sacklippe/nvim/commit/aef779bb1ddcc790a7ad9d09404706b0caf67905))
 * additional keymappings ([dc59330](https://github.com/sacklippe/nvim/commit/dc593300de21651f5d0e5638d62b8f245a70a6bf))
-
-
-
-# [0.2.0](https://github.com/sacklippe/nvim/compare/v0.1.0...v0.2.0) (2022-12-31)
-
-
-### Features
-
-* comstomise editor settings ([d18dda2](https://github.com/sacklippe/nvim/commit/d18dda2b87b899bb912b180e3b1fe8812c8e56e4))
 
 
 
