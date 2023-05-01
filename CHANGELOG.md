@@ -1,3 +1,12 @@
+## [0.9.1](https://github.com/sacklippe/nvim/compare/v0.9.0...v0.9.1) (2023-05-01)
+
+
+### Bug Fixes
+
+* remap conflicts ([3755a7c](https://github.com/sacklippe/nvim/commit/3755a7c318fbf80d73340822f0505f826945b883))
+
+
+
 # [0.9.0](https://github.com/sacklippe/nvim/compare/v0.8.0...v0.9.0) (2023-05-01)
 
 
@@ -48,15 +57,6 @@
 * add new remaps ([746c1dc](https://github.com/sacklippe/nvim/commit/746c1dcc797572e24d7ad2b8d6998ffa80e62e79))
 * add null-ls ([9581907](https://github.com/sacklippe/nvim/commit/9581907ee906623bd09396163e174cee233f4b43))
 * move cursor with tab indentation ([bfacfc2](https://github.com/sacklippe/nvim/commit/bfacfc2a257d07d7fbb5588c5c4bd5dc1cf55187))
-
-
-
-## [0.5.1](https://github.com/sacklippe/nvim/compare/v0.5.0...v0.5.1) (2023-01-09)
-
-
-### Bug Fixes
-
-* resolve keymap conflict ([bce9e4d](https://github.com/sacklippe/nvim/commit/bce9e4d4a2a8467092bead217a55dbff689e90b4))
 
 
 
