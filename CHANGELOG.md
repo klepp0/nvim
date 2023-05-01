@@ -1,3 +1,13 @@
+# [0.9.0](https://github.com/sacklippe/nvim/compare/v0.8.0...v0.9.0) (2023-05-01)
+
+
+### Features
+
+* introduce new remaps ([af0082c](https://github.com/sacklippe/nvim/commit/af0082c4391716a4d293f78545add7fb10e2b08f))
+* removes swp files and extends undo tree ([3b9664f](https://github.com/sacklippe/nvim/commit/3b9664f77728da221d5f31e8c347695a506552cf))
+
+
+
 # [0.8.0](https://github.com/sacklippe/nvim/compare/v0.7.0...v0.8.0) (2023-02-17)
 
 
@@ -47,17 +57,6 @@
 ### Bug Fixes
 
 * resolve keymap conflict ([bce9e4d](https://github.com/sacklippe/nvim/commit/bce9e4d4a2a8467092bead217a55dbff689e90b4))
-
-
-
-# [0.5.0](https://github.com/sacklippe/nvim/compare/v0.2.0...v0.5.0) (2023-01-09)
-
-
-### Features
-
-* add keymap to create new tmux window ([70d6ae5](https://github.com/sacklippe/nvim/commit/70d6ae51b767a9d566a322c3d75e216a62b6ec8c))
-* add shorcuts for chmod +x/copy/paste ([aef779b](https://github.com/sacklippe/nvim/commit/aef779bb1ddcc790a7ad9d09404706b0caf67905))
-* additional keymappings ([dc59330](https://github.com/sacklippe/nvim/commit/dc593300de21651f5d0e5638d62b8f245a70a6bf))
 
 
 
