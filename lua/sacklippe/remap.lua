@@ -1,11 +1,11 @@
-vim.g.mapleader = " "
-
 -- :Explore
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- center cursor
 vim.keymap.set({ "n", "v" }, "<C-d>", "<C-d>zz")
 vim.keymap.set({ "n", "v" }, "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
 
 -- tab indentation
 vim.keymap.set("n", "<tab>", ">>4l", { silent = true })
@@ -29,11 +29,24 @@ vim.keymap.set("v", "<C-c", "<Esc>")
 
 -- copy/paste to clipboard
 vim.keymap.set({ "n", "v" }, "<leader>y", '"+y')
-vim.keymap.set("n", "<leader>Y", '"+Y')
-vim.keymap.set({ "n", "v" }, "<leader>d", '"_d')
-vim.keymap.set("x", "<leader>p", '"_P')
+vim.keymap.set({ "n", "v" }, "<leader>d", '"+d')
+vim.keymap.set({ "n", "v" }, "<leader>p", '"+p')
+vim.keymap.set({ "n" }, "<leader>Y", '"+Y')
+vim.keymap.set({ "n" }, "<leader>D", '"+D')
+vim.keymap.set({ "n" }, "<leader>P", '"+P')
 
--- open new tmux window
+-- quick nav in quickfix / location list
+vim.keymap.set("n", "C-k", "<cmd>cnext<CR>zz")
+vim.keymap.set("n", "C-j", "<cmd>cprev<CR>zz")
+vim.keymap.set("n", "<leader>-k", "<cmd>lnext<CR>zz")
+vim.keymap.set("n", "<leader>-j", "<cmd>lprev<CR>zz")
+
+-- split window
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww<CR>", { desc = "Open [F]ull Screen Window" })
-vim.keymap.set("n", "<C-s>", "<cmd>silent !tmux split-window -v<CR>", { desc = "[S]plit Window (Vertically)" })
-vim.keymap.set("n", "<C-h>", "<cmd>silent !tmux split-window -h<CR>", { desc = "Split Window ([H]orizontally)" })
+vim.keymap.set("n", "<C-s>", "<cmd>silent :vsp<CR> :wincmd l<CR>", { desc = "[S]plit Window (Vertically)" })
+vim.keymap.set("n", "<C-h>", "<cmd>silent :sp<CR> :wincmd j<CR>", { desc = "Split Window ([H]orizontally)" })
+
+-- create integrate terminal session
+vim.keymap.set("n", "<leader>t", "<cmd>silent :term zsh<CR>i clear<CR>", { desc = "Open [T]erminal" })
+vim.keymap.set("t", "<ESC>", "<C-\\><C-n>", { noremap = true })
+vim.keymap.set("t", "<C-w>", "<C-\\><C-n><C-w>")
