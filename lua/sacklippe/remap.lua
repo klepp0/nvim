@@ -22,7 +22,6 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 -- execution
 vim.keymap.set("n", "<C-p>", ":sp <CR> :term poetry run python % <CR>")
-vim.keymap.set("n", "<C-w>", ":bd!<CR>")
 
 -- to also apply changes of mass selection
 vim.keymap.set("v", "<C-c", "<Esc>")
@@ -30,7 +29,7 @@ vim.keymap.set("v", "<C-c", "<Esc>")
 -- copy/paste to clipboard
 vim.keymap.set({ "n", "v" }, "<leader>y", '"+y')
 vim.keymap.set({ "n", "v" }, "<leader>d", '"+d')
-vim.keymap.set({ "n", "v" }, "<leader>p", '"+p')
+--vim.keymap.set({ "n", "v" }, "<leader>p", '"+p')
 vim.keymap.set({ "n" }, "<leader>Y", '"+Y')
 vim.keymap.set({ "n" }, "<leader>D", '"+D')
 vim.keymap.set({ "n" }, "<leader>P", '"+P')
@@ -50,3 +49,4 @@ vim.keymap.set("n", "<C-h>", "<cmd>silent :sp<CR> :wincmd j<CR>", { desc = "Spli
 vim.keymap.set("n", "<leader>t", "<cmd>silent :term zsh<CR>i clear<CR>", { desc = "Open [T]erminal" })
 vim.keymap.set("t", "<ESC>", "<C-\\><C-n>", { noremap = true })
 vim.keymap.set("t", "<C-w>", "<C-\\><C-n><C-w>")
+vim.keymap.set("t", "<C-d>", "<C-d><C-d>")
