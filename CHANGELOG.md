@@ -1,3 +1,23 @@
+# [1.0.0](https://github.com/sacklippe/nvim/compare/v0.9.1...v1.0.0) (2023-05-04)
+
+
+### Bug Fixes
+
+* contradiction with explore keymap ([f563a88](https://github.com/sacklippe/nvim/commit/f563a88c77fbe69517fa400116d0b0efbb2c5801))
+* source order affects remaps ([02aa476](https://github.com/sacklippe/nvim/commit/02aa476f632ef7157c3e255f3b76c16ce4c05a38))
+
+
+### Features
+
+* remove kick-start setup ([7a61e05](https://github.com/sacklippe/nvim/commit/7a61e0579d80a250e4587572c885c615fd5823d8))
+
+
+### BREAKING CHANGES
+
+* This reduce package overhead and cleans up the setup.
+
+
+
 ## [0.9.1](https://github.com/sacklippe/nvim/compare/v0.9.0...v0.9.1) (2023-05-01)
 
 
@@ -41,22 +61,6 @@
 * add aditional remaps ([daae3d1](https://github.com/sacklippe/nvim/commit/daae3d103db6c6a2fcfc560667e335e62bf24601))
 * add harpoon ([47675bc](https://github.com/sacklippe/nvim/commit/47675bc0ba241f532d2014dc8198de544eb9bca1))
 * first lsp configuration with lsp zero ([3f30878](https://github.com/sacklippe/nvim/commit/3f3087876fa977407f3ee71b2e3e727f1718df9a))
-
-
-
-# [0.6.0](https://github.com/sacklippe/nvim/compare/v0.5.1...v0.6.0) (2023-02-02)
-
-
-### Bug Fixes
-
-* tab indentation ([c5d2158](https://github.com/sacklippe/nvim/commit/c5d21587f6a1ef7de4a559ed09c0457183043823))
-
-
-### Features
-
-* add new remaps ([746c1dc](https://github.com/sacklippe/nvim/commit/746c1dcc797572e24d7ad2b8d6998ffa80e62e79))
-* add null-ls ([9581907](https://github.com/sacklippe/nvim/commit/9581907ee906623bd09396163e174cee233f4b43))
-* move cursor with tab indentation ([bfacfc2](https://github.com/sacklippe/nvim/commit/bfacfc2a257d07d7fbb5588c5c4bd5dc1cf55187))
 
 
 
