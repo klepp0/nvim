@@ -49,4 +49,3 @@ vim.keymap.set("n", "<C-h>", "<cmd>silent :sp<CR> :wincmd j<CR>", { desc = "Spli
 vim.keymap.set("n", "<leader>t", "<cmd>silent :term zsh<CR>i clear<CR>", { desc = "Open [T]erminal" })
 vim.keymap.set("t", "<ESC>", "<C-\\><C-n>", { noremap = true })
 vim.keymap.set("t", "<C-w>", "<C-\\><C-n><C-w>")
-vim.keymap.set("t", "<C-d>", "<C-d><C-d>")
