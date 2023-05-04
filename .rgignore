@@ -1,0 +1,4 @@
+# ignore ripgrep patterns
+
+# copilot causes overhead in live-grep
+pack/*
