@@ -59,4 +59,10 @@ require("packer").startup(function(use)
 
     --- Copilot ---
     use({ "github/copilot.vim", run = "cargo build --release" })
+
+    --- Gitsigns ---
+    use {
+        'lewis6991/gitsigns.nvim',
+        -- tag = 'release' -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
+    }
 end)
