@@ -1,3 +1,12 @@
+# [1.2.0](https://github.com/sacklippe/nvim/compare/v1.1.0...v1.2.0) (2023-05-05)
+
+
+### Features
+
+* add gitsign ([8a763f5](https://github.com/sacklippe/nvim/commit/8a763f55b6ca783a52a457910583a8dabf32c908))
+
+
+
 # [1.1.0](https://github.com/sacklippe/nvim/compare/v1.0.0...v1.1.0) (2023-05-05)
 
 
@@ -46,15 +55,6 @@
 
 * introduce new remaps ([af0082c](https://github.com/sacklippe/nvim/commit/af0082c4391716a4d293f78545add7fb10e2b08f))
 * removes swp files and extends undo tree ([3b9664f](https://github.com/sacklippe/nvim/commit/3b9664f77728da221d5f31e8c347695a506552cf))
-
-
-
-# [0.8.0](https://github.com/sacklippe/nvim/compare/v0.7.0...v0.8.0) (2023-02-17)
-
-
-### Features
-
-* add remps for harpoons 5...10 ([bb96379](https://github.com/sacklippe/nvim/commit/bb963799b3e2f8e0d9f737b64052adf068100600))
 
 
 
