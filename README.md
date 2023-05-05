@@ -6,4 +6,4 @@ This is my personal `nvim` setup.
 
 ### Telescope
 
-Telescope requires external dependencies [ripgrep](https://github.com/BurntSushi/ripgrep) and [fd](https://github.com/sharkdp/fd). You can check for missing dependencies by executing `:checkhealth telescope`.
+Telescope requires external dependencies [ripgrep](https://github.com/BurntSushi/ripgrep) and [fd](https://github.com/sharkdp/fd).
