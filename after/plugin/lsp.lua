@@ -42,7 +42,6 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set("n", "<C-p>", function() vim.diagnostic.goto_prew() end, opts)
 end)
 
-
 lsp.setup()
 
 vim.diagnostic.config({
