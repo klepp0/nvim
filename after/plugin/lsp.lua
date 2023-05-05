@@ -29,23 +29,6 @@ lsp.set_preferences({
     }
 })
 
-
---lsp.format_on_save({
---    servers = {
---        ['lua_ls'] = { 'lua' },
---        ['rust_analyzer'] = { 'rust' },
---        ['null-ls'] = { 'python' },
---    }
---})
---
---lsp.format_mapping("<leader>f",
---    servers = {
---        ['lua_ls'] = { 'lua' },
---        ['rust_analyzer'] = { 'rust' },
---        ['null-ls'] = { 'python' },
---    }
---)
-
 lsp.on_attach(function(client, bufnr)
     local opts = { buffer = bufnr, remap = false }
 
