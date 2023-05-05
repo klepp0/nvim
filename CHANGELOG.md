@@ -1,3 +1,12 @@
+# [1.3.0](https://github.com/sacklippe/nvim/compare/v1.2.0...v1.3.0) (2023-05-05)
+
+
+### Features
+
+* add toggleterm ([f6effa0](https://github.com/sacklippe/nvim/commit/f6effa0a42948215603644e9ebc26e17b4b1905e))
+
+
+
 # [1.2.0](https://github.com/sacklippe/nvim/compare/v1.1.0...v1.2.0) (2023-05-05)
 
 
@@ -45,16 +54,6 @@
 ### Bug Fixes
 
 * remap conflicts ([3755a7c](https://github.com/sacklippe/nvim/commit/3755a7c318fbf80d73340822f0505f826945b883))
-
-
-
-# [0.9.0](https://github.com/sacklippe/nvim/compare/v0.8.0...v0.9.0) (2023-05-01)
-
-
-### Features
-
-* introduce new remaps ([af0082c](https://github.com/sacklippe/nvim/commit/af0082c4391716a4d293f78545add7fb10e2b08f))
-* removes swp files and extends undo tree ([3b9664f](https://github.com/sacklippe/nvim/commit/3b9664f77728da221d5f31e8c347695a506552cf))
 
 
 
