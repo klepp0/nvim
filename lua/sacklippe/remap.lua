@@ -34,6 +34,9 @@ vim.keymap.set({ "n" }, "<leader>Y", '"+Y')
 vim.keymap.set({ "n" }, "<leader>D", '"+D')
 --vim.keymap.set({ "n" }, "<leader>P", '"+P')
 
+-- format code
+vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
+
 -- quick nav in quickfix / location list
 vim.keymap.set("n", "C-k", "<cmd>cnext<CR>zz")
 vim.keymap.set("n", "C-j", "<cmd>cprev<CR>zz")
