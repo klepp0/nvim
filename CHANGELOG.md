@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/sacklippe/nvim/compare/v1.0.0...v1.1.0) (2023-05-05)
+
+
+### Features
+
+* add code formatting keymap ([f319e05](https://github.com/sacklippe/nvim/commit/f319e05e0ea508f0e34fa6dc1aa254f75e86447a))
+* add copilot keymaps ([0179c61](https://github.com/sacklippe/nvim/commit/0179c61935a7c214671a7769f0e86afcbbcd47b0))
+* add everforest coloscheme and copilot ([3f95574](https://github.com/sacklippe/nvim/commit/3f9557433ec7454408fa76e2be294d43ce2b5546))
+* config lsp based on zero-lsp ([2aebee7](https://github.com/sacklippe/nvim/commit/2aebee71ee809ac2f7533ed3fffa1d47d143d015))
+
+
+
 # [1.0.0](https://github.com/sacklippe/nvim/compare/v0.9.1...v1.0.0) (2023-05-04)
 
 
@@ -43,24 +55,6 @@
 ### Features
 
 * add remps for harpoons 5...10 ([bb96379](https://github.com/sacklippe/nvim/commit/bb963799b3e2f8e0d9f737b64052adf068100600))
-
-
-
-# [0.7.0](https://github.com/sacklippe/nvim/compare/v0.6.0...v0.7.0) (2023-02-17)
-
-
-### Bug Fixes
-
-* consistent keymaps ([9f2af46](https://github.com/sacklippe/nvim/commit/9f2af46d01e10a891b18fa1ff585f0157784d0e8))
-* false mapping of '<leader>4' ([702af29](https://github.com/sacklippe/nvim/commit/702af29f9398af3f42c44500fc7ad32dec3592b1))
-* remove invalid language server ([924c960](https://github.com/sacklippe/nvim/commit/924c960159cb7a5f16e1676d929d0885020c80a2))
-
-
-### Features
-
-* add aditional remaps ([daae3d1](https://github.com/sacklippe/nvim/commit/daae3d103db6c6a2fcfc560667e335e62bf24601))
-* add harpoon ([47675bc](https://github.com/sacklippe/nvim/commit/47675bc0ba241f532d2014dc8198de544eb9bca1))
-* first lsp configuration with lsp zero ([3f30878](https://github.com/sacklippe/nvim/commit/3f3087876fa977407f3ee71b2e3e727f1718df9a))
 
 
 
