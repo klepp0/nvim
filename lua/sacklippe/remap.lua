@@ -47,8 +47,3 @@ vim.keymap.set("n", "<leader>-j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww<CR>", { desc = "Open [F]ull Screen Window" })
 vim.keymap.set("n", "<C-s>", "<cmd>silent :vsp<CR> :wincmd l<CR>", { desc = "[S]plit Window (Vertically)" })
 vim.keymap.set("n", "<C-h>", "<cmd>silent :sp<CR> :wincmd j<CR>", { desc = "Split Window ([H]orizontally)" })
-
--- create integrate terminal session
-vim.keymap.set("n", "<leader>t", "<cmd>silent :term zsh<CR>i clear<CR>", { desc = "Open [T]erminal" })
-vim.keymap.set("t", "<ESC>", "<C-\\><C-n>", { noremap = true })
-vim.keymap.set("t", "<C-w>", "<C-\\><C-n><C-w>")
