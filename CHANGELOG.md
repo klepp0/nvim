@@ -1,3 +1,12 @@
+# [1.4.0](https://github.com/sacklippe/nvim/compare/v1.3.0...v1.4.0) (2023-06-13)
+
+
+### Features
+
+* add toggleterm ([2f9c581](https://github.com/sacklippe/nvim/commit/2f9c581bfbb4e74b44f7fe6abc7f69c439fbb219))
+
+
+
 # [1.3.0](https://github.com/sacklippe/nvim/compare/v1.2.0...v1.3.0) (2023-05-05)
 
 
@@ -45,15 +54,6 @@
 ### BREAKING CHANGES
 
 * This reduce package overhead and cleans up the setup.
-
-
-
-## [0.9.1](https://github.com/sacklippe/nvim/compare/v0.9.0...v0.9.1) (2023-05-01)
-
-
-### Bug Fixes
-
-* remap conflicts ([3755a7c](https://github.com/sacklippe/nvim/commit/3755a7c318fbf80d73340822f0505f826945b883))
 
 
 
