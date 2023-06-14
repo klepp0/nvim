@@ -8,6 +8,7 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- tab indentation
+vim.keymap.set("i", "<S-tab>", "<C-d>", { silent = true })
 vim.keymap.set("n", "<tab>", ">>4l", { silent = true })
 vim.keymap.set("n", "<S-tab>", "<<4h", { silent = true })
 vim.keymap.set("v", "<tab>", ">gvl", { silent = true })
