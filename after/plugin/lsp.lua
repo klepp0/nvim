@@ -48,6 +48,7 @@ vim.diagnostic.config({
     virtual_text = true
 })
 
+-- add black formatter and isort
 local null_ls = require('null-ls')
 local null_opts = lsp.build_options('null-ls', {})
 
@@ -58,5 +59,6 @@ null_ls.setup({
     end,
     sources = {
         null_ls.builtins.formatting.black,
+        null_ls.builtins.formatting.isort,
     }
 })
