@@ -44,6 +44,14 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set("n", "<C-p>", function() vim.diagnostic.goto_prew() end, opts)
 end)
 
+-- configure lsp
+local lspconfig = require('lspconfig')
+
+lspconfig.pyright.setup({
+  single_file_support = false,
+  filetypes={"python"}
+})
+
 lsp.setup()
 
 vim.diagnostic.config({
