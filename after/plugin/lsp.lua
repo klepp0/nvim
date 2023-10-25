@@ -8,7 +8,8 @@ lsp_zero.ensure_installed({
     "eslint", -- JavaScript
     "rust_analyzer", -- Rust
     "pyright", -- Python
-    'yamllint', -- YAML
+    "yamllint", -- YAML
+    "dockerls", -- Docker
 })
 
 -- Fix Undefined global 'vim'
