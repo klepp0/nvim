@@ -1,3 +1,15 @@
+# [1.6.0](https://github.com/sacklippe/nvim/compare/v1.5.0...v1.6.0) (2023-10-25)
+
+
+### Features
+
+* add dockerls to installation list ([4d6c2d1](https://github.com/sacklippe/nvim/commit/4d6c2d17b7cabfd5406a03f1613f991378a40218))
+* add yamllint as default installation ([0c2a614](https://github.com/sacklippe/nvim/commit/0c2a614f3606fc71a3f330b0a7f78d0bfe489da2))
+* configure pyright ([d6ec0df](https://github.com/sacklippe/nvim/commit/d6ec0df2fc1d8bb5ff826cc2d378aef546ec87c8))
+* introduce isort to sort python imports ([27896b0](https://github.com/sacklippe/nvim/commit/27896b02f89f36082d387d856c394628afb52162))
+
+
+
 # [1.5.0](https://github.com/sacklippe/nvim/compare/v1.4.0...v1.5.0) (2023-06-14)
 
 
@@ -31,18 +43,6 @@
 ### Features
 
 * add gitsign ([8a763f5](https://github.com/sacklippe/nvim/commit/8a763f55b6ca783a52a457910583a8dabf32c908))
-
-
-
-# [1.1.0](https://github.com/sacklippe/nvim/compare/v1.0.0...v1.1.0) (2023-05-05)
-
-
-### Features
-
-* add code formatting keymap ([f319e05](https://github.com/sacklippe/nvim/commit/f319e05e0ea508f0e34fa6dc1aa254f75e86447a))
-* add copilot keymaps ([0179c61](https://github.com/sacklippe/nvim/commit/0179c61935a7c214671a7769f0e86afcbbcd47b0))
-* add everforest coloscheme and copilot ([3f95574](https://github.com/sacklippe/nvim/commit/3f9557433ec7454408fa76e2be294d43ce2b5546))
-* config lsp based on zero-lsp ([2aebee7](https://github.com/sacklippe/nvim/commit/2aebee71ee809ac2f7533ed3fffa1d47d143d015))
 
 
 
