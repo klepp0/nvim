@@ -1,9 +1,9 @@
 -- Learn the keybindings, see :help lsp-zero-keybindings
 -- Learn to configure LSP servers, see :help lsp-zero-api-showcase
-local lsp = require("lsp-zero")
-lsp.preset("minimal")
+local lsp_zero = require("lsp-zero")
+lsp_zero.preset("minimal")
 
-lsp.ensure_installed({
+lsp_zero.ensure_installed({
     "tsserver", -- TypeScript
     "eslint", -- JavaScript
     "rust_analyzer", -- Rust
@@ -12,16 +12,16 @@ lsp.ensure_installed({
 })
 
 -- Fix Undefined global 'vim'
-lsp.nvim_workspace()
+lsp_zero.nvim_workspace()
 
 local cmp = require("cmp")
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
-local cmp_mappings = lsp.defaults.cmp_mappings({
+local cmp_mappings = lsp_zero.defaults.cmp_mappings({
     ["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
     ["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
 })
 
-lsp.set_preferences({
+lsp_zero.set_preferences({
     suggest_lsp_servers = false,
     sign_icons = {
         error = 'E',
@@ -31,7 +31,7 @@ lsp.set_preferences({
     }
 })
 
-lsp.on_attach(function(client, bufnr)
+lsp_zero.on_attach(function(client, bufnr)
     local opts = { buffer = bufnr, remap = false }
 
     vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
@@ -52,7 +52,7 @@ lspconfig.pyright.setup({
   filetypes={"python"}
 })
 
-lsp.setup()
+lsp_zero.setup()
 
 vim.diagnostic.config({
     virtual_text = true
@@ -60,7 +60,7 @@ vim.diagnostic.config({
 
 -- add black formatter and isort
 local null_ls = require('null-ls')
-local null_opts = lsp.build_options('null-ls', {})
+local null_opts = lsp_zero.build_options('null-ls', {})
 
 null_ls.setup({
     on_attach = function(client, bufnr)
