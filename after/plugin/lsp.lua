@@ -4,12 +4,12 @@ local lsp_zero = require("lsp-zero")
 lsp_zero.preset("minimal")
 
 lsp_zero.ensure_installed({
-    "tsserver", -- TypeScript
-    "eslint", -- JavaScript
+    "tsserver",      -- TypeScript
+    "eslint",        -- JavaScript
     "rust_analyzer", -- Rust
-    "pyright", -- Python
-    "yamllint", -- YAML
-    "dockerls", -- Docker
+    "pyright",       -- Python
+    "yamlls",        -- YAML
+    "dockerls",      -- Docker
 })
 
 -- Fix Undefined global 'vim'
@@ -49,8 +49,8 @@ end)
 local lspconfig = require('lspconfig')
 
 lspconfig.pyright.setup({
-  single_file_support = false,
-  filetypes={"python"}
+    single_file_support = false,
+    filetypes = { "python" }
 })
 
 lsp_zero.setup()
