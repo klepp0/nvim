@@ -1,3 +1,12 @@
+# [1.7.0](https://github.com/sacklippe/nvim/compare/v1.6.0...v1.7.0) (2024-03-09)
+
+
+### Features
+
+* add markdown formatting with prettier ([f02a57a](https://github.com/sacklippe/nvim/commit/f02a57a89960f79f5c21562540e227d66139ac15))
+
+
+
 # [1.6.0](https://github.com/sacklippe/nvim/compare/v1.5.0...v1.6.0) (2023-10-25)
 
 
@@ -34,15 +43,6 @@
 ### Features
 
 * add toggleterm ([f6effa0](https://github.com/sacklippe/nvim/commit/f6effa0a42948215603644e9ebc26e17b4b1905e))
-
-
-
-# [1.2.0](https://github.com/sacklippe/nvim/compare/v1.1.0...v1.2.0) (2023-05-05)
-
-
-### Features
-
-* add gitsign ([8a763f5](https://github.com/sacklippe/nvim/commit/8a763f55b6ca783a52a457910583a8dabf32c908))
 
 
 
