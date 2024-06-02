@@ -1,6 +1,3 @@
-# src:
-# - https://www.youtube.com/watch?v=fcHJZ4pMzBs&t=404s
-# - https://github.com/EddieHubCommunity/LinkFree/blob/main/.github/workflows/release.yml
 name: Releases
 on:
   push:
@@ -12,24 +9,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout Repository
+      - name: Checkout Repository
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      - name: conventional Changelog Action
-        id: changelog
-        uses: TriPSs/conventional-changelog-action@v3
+      - name: Conventional Changelog Action
+        uses: TriPSs/conventional-changelog-action@v5
         with:
-          github-token: ${{ secrets.CHANGELOG_RELEASE }}
-          version-file: './package.json,./package-lock.json'
-
-      - name: create release
-        uses: actions/create-release@v1
-        if: ${{ steps.changelog.outputs.skipped == 'false' }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.CHANGELOG_RELEASE }}
-        with:
-          tag_name: ${{ steps.changelog.outputs.tag }}
-          release_name: ${{ steps.changelog.outputs.tag }}
-          body: ${{ steps.changelog.outputs.clean_changelog }}
+          git-message: 'chore(release): {version}'
+          git-user-name: 'github-actions[bot]'
+          git-user-email: 'github-actions[bot]@users.noreply.github.com'
+          release-count: '10'
