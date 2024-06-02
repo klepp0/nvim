@@ -9,6 +9,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+         fetch-depth: 0
+
       - name: Conventional Changelog Action
         uses: TriPSs/conventional-changelog-action@v5
         with:
