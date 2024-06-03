@@ -1,3 +1,12 @@
+## [2.1.2](https://github.com/klepp0/nvim/compare/v2.1.1...v2.1.2) (2024-06-03)
+
+
+### Bug Fixes
+
+* typo ([4723b9f](https://github.com/klepp0/nvim/commit/4723b9f41375cc4ee9460b1572ea1d190352f37f))
+
+
+
 ## [2.1.1](https://github.com/klepp0/nvim/compare/v2.1.0...v2.1.1) (2024-06-03)
 
 
