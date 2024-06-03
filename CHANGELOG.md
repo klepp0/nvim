@@ -1,3 +1,13 @@
+## [2.1.1](https://github.com/klepp0/nvim/compare/v2.1.0...v2.1.1) (2024-06-03)
+
+
+### Bug Fixes
+
+* path to remap and set ([0a340de](https://github.com/klepp0/nvim/commit/0a340de00e064da56657b0f6d853a6a4215f4b45))
+* typo ([a2b99e1](https://github.com/klepp0/nvim/commit/a2b99e13eb788f698ed66bf091f0e3327110e929))
+
+
+
 # [2.1.0](https://github.com/klepp0/nvim/compare/v2.0.0...v2.1.0) (2024-06-02)
 
 
