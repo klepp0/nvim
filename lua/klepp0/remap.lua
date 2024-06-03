@@ -37,3 +37,32 @@ vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left wind
 vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
 vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
+
+-- Explore (:Ex)
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+
+-- Center cursor
+vim.keymap.set({ "n", "v" }, "<C-d>", "<C-d>zz")
+vim.keymap.set({ "n", "v" }, "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+
+-- Tab indentation
+vim.keymap.set("i", "<S-tab>", "<C-d>", { silent = true })
+vim.keymap.set("n", "<tab>", ">>4l", { silent = true })
+vim.keymap.set("n", "<S-tab>", "<<4h", { silent = true })
+vim.keymap.set("v", "<tab>", ">gvl", { silent = true })
+vim.keymap.set("v", "<S-tab>", "<gvh", { silent = true })
+
+-- Move highlighted lines
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+-- Copy/paste to clipboard
+vim.keymap.set({ "n", "v" }, "<leader>y", '"+y')
+vim.keymap.set({ "n", "v" }, "<leader>d", '"+d')
+vim.keymap.set({ "n" }, "<leader>Y", '"+Y')
+vim.keymap.set({ "n" }, "<leader>D", '"+D')
+
+-- Format code
+vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
