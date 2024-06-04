@@ -22,9 +22,6 @@ vim.keymap.set("n", "<C-N>", vim.diagnostic.goto_prev, { desc = "Go to previous 
 vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostic [E]rror messages" })
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
 
--- Enter/exit terminal mode in the builtin terminal
-vim.keymap.set("n", "<C-t>", "<cmd>term<CR>", { desc = "Enter terminal mode" })
-
 -- Disable arrow keys in normal mode
 vim.keymap.set("n", "<left>", '<cmd>echo "Use h to move!!"<CR>')
 vim.keymap.set("n", "<right>", '<cmd>echo "Use l to move!!"<CR>')
