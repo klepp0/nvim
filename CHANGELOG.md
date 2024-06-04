@@ -1,3 +1,12 @@
+# [2.2.0](https://github.com/klepp0/nvim/compare/v2.1.2...v2.2.0) (2024-06-03)
+
+
+### Features
+
+* add essential remaps from v1 ([a2d2c35](https://github.com/klepp0/nvim/commit/a2d2c3529314a2d4e8de8e0e7a13a5baae72c14a))
+
+
+
 ## [2.1.2](https://github.com/klepp0/nvim/compare/v2.1.1...v2.1.2) (2024-06-03)
 
 
