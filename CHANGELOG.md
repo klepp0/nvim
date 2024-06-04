@@ -1,3 +1,12 @@
+## [2.2.1](https://github.com/klepp0/nvim/compare/v2.2.0...v2.2.1) (2024-06-04)
+
+
+### Bug Fixes
+
+* swap horizontal and vertical window split ([c09c407](https://github.com/klepp0/nvim/commit/c09c407bb32a8f14f02a52e1bd38716152aeb468))
+
+
+
 # [2.2.0](https://github.com/klepp0/nvim/compare/v2.1.2...v2.2.0) (2024-06-03)
 
 
