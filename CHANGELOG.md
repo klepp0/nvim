@@ -1,3 +1,20 @@
+# [2.3.0](https://github.com/klepp0/nvim/compare/v2.2.1...v2.3.0) (2024-06-14)
+
+
+### Bug Fixes
+
+* leader needs to be defined before lazy is loaded ([466af2f](https://github.com/klepp0/nvim/commit/466af2fadb398dda20c23376fc74415b98bd0250))
+
+
+### Features
+
+* add copilot plugin ([b95e445](https://github.com/klepp0/nvim/commit/b95e4457df6244768d0e31af467618e420b494e3))
+* add harpoon plugin ([7186372](https://github.com/klepp0/nvim/commit/71863729d4898e174c908aab7a289e84292ec745))
+* add mason back in ([863e5c4](https://github.com/klepp0/nvim/commit/863e5c46378e0772432c540461ce4e0bf8054cd5))
+* change to zero-lsp to improve code python integration ([d294569](https://github.com/klepp0/nvim/commit/d294569ee159a1df020949156258ba85d3f88003))
+
+
+
 ## [2.2.1](https://github.com/klepp0/nvim/compare/v2.2.0...v2.2.1) (2024-06-04)
 
 
