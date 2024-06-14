@@ -208,9 +208,10 @@ require("lazy").setup({
     branch = "v1.x",
     dependencies = {
       -- LSP Support
-      { "neovim/nvim-lspconfig" },             -- Required
-      { "williamboman/mason.nvim" },           -- Optional
-      { "williamboman/mason-lspconfig.nvim" }, -- Optional
+      { "neovim/nvim-lspconfig" },                     -- Required
+      { "williamboman/mason.nvim" },                   -- Optional
+      { "williamboman/mason-lspconfig.nvim" },         -- Optional
+      { "WhoIsSethDaniel/mason-tool-installer.nvim" }, -- Optional
 
       -- Autocompletion
       { "hrsh7th/nvim-cmp" },         -- Required
