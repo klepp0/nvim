@@ -22,7 +22,6 @@ mason_lspconfig.setup({
 	ensure_installed = {
 		"tsserver",
 		"lua_ls",
-		"pyright",
 		"rust_analyzer",
 	},
 })

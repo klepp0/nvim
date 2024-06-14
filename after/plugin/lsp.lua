@@ -45,14 +45,6 @@ lsp_zero.on_attach(function(client, bufnr)
 	vim.keymap.set("n", "<C-p>", function() vim.diagnostic.goto_prew() end, opts)
 end)
 
--- configure lsp
-local lspconfig = require('lspconfig')
-
-lspconfig.pylint.setup({
-	single_file_support = false,
-	filetypes = { "python" }
-})
-
 lsp_zero.setup()
 
 vim.diagnostic.config({
@@ -69,6 +61,7 @@ null_ls.setup({
 		--- you can add more stuff here if you need it
 	end,
 	sources = {
+		null_ls.builtins.diagnostics.pylint,
 		null_ls.builtins.formatting.black,
 		null_ls.builtins.formatting.isort,
 		null_ls.builtins.formatting.prettier.with({
