@@ -14,5 +14,5 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
           repository: klepp0/dotfiles
-          event-type: my-event
+          event-type: update-nvim
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
