@@ -3,7 +3,7 @@ name: Dispatch to Dotfiles
 on:
   push:
     branches:
-      - dispatch-dotfiles
+      - main
 
 jobs:
   dispatch:
