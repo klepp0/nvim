@@ -1,6 +1,7 @@
 # `nvim` 🪬
 
 <div align="center">
+
 ![Latest Version](https://img.shields.io/github/v/tag/klepp0/nvim?label=latest%20version)
 ![Releases](https://github.com/sacklippe/nvim/actions/workflows/release.yml/badge.svg)
 ![Dispatch](https://github.com/sacklippe/nvim/actions/workflows/dispatch.yml/badge.svg)
