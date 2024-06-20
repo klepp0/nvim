@@ -60,9 +60,19 @@ vim.diagnostic.config({
 	virtual_text = true
 })
 
--- add black formatter and isort
+-- Setup null-ls
 local null_ls = require('null-ls')
 local null_opts = lsp_zero.build_options('null-ls', {})
+
+-- Utility function to get the path of the current virtual environment
+local function get_python_path()
+  local venv_path = os.getenv("VIRTUAL_ENV")
+  if venv_path then
+    return venv_path .. "/bin/python"
+  else
+    return "python"
+  end
+end
 
 null_ls.setup({
 	on_attach = function(client, bufnr)
@@ -70,7 +80,10 @@ null_ls.setup({
 		--- you can add more stuff here if you need it
 	end,
 	sources = {
-		null_ls.builtins.diagnostics.pylint,
+		null_ls.builtins.diagnostics.pylint.with({
+			command = get_python_path() .. " -m pylint",
+			extra_args = {"--rcfile", vim.fn.expand("~/.config/nvim/.pylintrc")},
+		}),
 		null_ls.builtins.formatting.black,
 		null_ls.builtins.formatting.isort,
 		null_ls.builtins.formatting.prettier.with({
