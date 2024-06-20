@@ -23,6 +23,7 @@ mason_lspconfig.setup({
 		"tsserver",
 		"lua_ls",
 		"rust_analyzer",
+		"pyright",
 	},
 })
 
