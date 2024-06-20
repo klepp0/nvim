@@ -4,13 +4,13 @@ local lsp_zero = require("lsp-zero")
 lsp_zero.preset("minimal")
 
 lsp_zero.ensure_installed({
-	"tsserver", -- TypeScript
-	"eslint", -- JavaScript
+	"tsserver",   -- TypeScript
+	"eslint",     -- JavaScript
 	"rust_analyzer", -- Rust
-	"pylint", -- Python
-	"pyright", -- Python
-	"yamlls", -- YAML
-	"dockerls", -- Docker
+	"pylint",     -- Python
+	"pyright",    -- Python
+	"yamlls",     -- YAML
+	"dockerls",   -- Docker
 })
 
 -- Fix Undefined global 'vim'
@@ -50,8 +50,8 @@ end)
 local lspconfig = require('lspconfig')
 
 lspconfig.pyright.setup({
-    single_file_support = false,
-    filetypes = { "python" }
+	single_file_support = false,
+	filetypes = { "python" }
 })
 
 lsp_zero.setup()
@@ -66,12 +66,12 @@ local null_opts = lsp_zero.build_options('null-ls', {})
 
 -- Utility function to get the path of the current virtual environment
 local function get_python_path()
-  local venv_path = os.getenv("VIRTUAL_ENV")
-  if venv_path then
-    return venv_path .. "/bin/python"
-  else
-    return "python"
-  end
+	local venv_path = os.getenv("VIRTUAL_ENV")
+	if venv_path then
+		return venv_path .. "/bin/python"
+	else
+		return "python"
+	end
 end
 
 null_ls.setup({
@@ -91,4 +91,3 @@ null_ls.setup({
 		}),
 	}
 })
-

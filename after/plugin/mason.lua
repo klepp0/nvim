@@ -33,6 +33,6 @@ mason_tool_installer.setup({
 		"stylua", -- lua formatter
 		"isort", -- python formatter
 		"black", -- python formatter
-		"pylint",
+		"pylint", -- python linter
 	},
 })
