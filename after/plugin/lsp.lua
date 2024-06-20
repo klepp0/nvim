@@ -8,6 +8,7 @@ lsp_zero.ensure_installed({
 	"eslint", -- JavaScript
 	"rust_analyzer", -- Rust
 	"pylint", -- Python
+	"pyright", -- Python
 	"yamlls", -- YAML
 	"dockerls", -- Docker
 })
@@ -44,6 +45,14 @@ lsp_zero.on_attach(function(client, bufnr)
 	vim.keymap.set("n", "<C-n>", function() vim.diagnostic.goto_next() end, opts)
 	vim.keymap.set("n", "<C-p>", function() vim.diagnostic.goto_prew() end, opts)
 end)
+
+-- configure lsp
+local lspconfig = require('lspconfig')
+
+lspconfig.pyright.setup({
+    single_file_support = false,
+    filetypes = { "python" }
+})
 
 lsp_zero.setup()
 
