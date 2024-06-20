@@ -81,8 +81,11 @@ null_ls.setup({
 	end,
 	sources = {
 		null_ls.builtins.diagnostics.pylint.with({
-			command = get_python_path() .. " -m pylint",
-			extra_args = {"--rcfile", vim.fn.expand("~/.config/nvim/.pylintrc")},
+			command = get_python_path(),
+			args = function(params)
+				return { "-m", "pylint", "--output-format=json", params.bufname }
+			end,
+			format = "json", -- Ensure null-ls expects JSON format
 		}),
 		null_ls.builtins.formatting.black,
 		null_ls.builtins.formatting.isort,
