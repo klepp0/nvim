@@ -1,3 +1,13 @@
+# [2.4.0](https://github.com/klepp0/nvim/compare/v2.3.0...v2.4.0) (2024-06-20)
+
+
+### Features
+
+* add pyright ([b43346a](https://github.com/klepp0/nvim/commit/b43346a7fc3db32939571ba9d3053390c0f6c529))
+* connect pylint to activated venv ([4eef46d](https://github.com/klepp0/nvim/commit/4eef46d1006a719cd720170304ea54dc2433adb1))
+
+
+
 # [2.3.0](https://github.com/klepp0/nvim/compare/v2.2.1...v2.3.0) (2024-06-14)
 
 
