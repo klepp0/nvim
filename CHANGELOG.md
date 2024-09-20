@@ -1,3 +1,12 @@
+## [2.4.2](https://github.com/klepp0/nvim/compare/v2.4.1...v2.4.2) (2024-09-20)
+
+
+### Bug Fixes
+
+* mason does not know tsserver ([f39c432](https://github.com/klepp0/nvim/commit/f39c4321a67c99e8647580a2d28af01253e3f296))
+
+
+
 ## [2.4.1](https://github.com/klepp0/nvim/compare/v2.4.0...v2.4.1) (2024-06-20)
 
 
