@@ -23,6 +23,8 @@ mason_lspconfig.setup({
 		"lua_ls",
 		"rust_analyzer",
 		"pyright",
+		"ruff",
+		"gopls",
 	},
 })
 
@@ -30,8 +32,10 @@ mason_tool_installer.setup({
 	ensure_installed = {
 		"prettier", -- prettier formatter
 		"stylua", -- lua formatter
-		"isort", -- python formatter
-		"black", -- python formatter
+		-- "isort", -- python formatter
+		-- "black", -- python formatter
 		"pylint", -- python linter
+		"ruff", -- python formatter
+		"gopls", -- go language server
 	},
 })
