@@ -1,3 +1,21 @@
+## [2.4.2](https://github.com/klepp0/nvim/compare/v2.4.1...v2.4.2) (2024-09-20)
+
+
+### Bug Fixes
+
+* mason does not know tsserver ([f39c432](https://github.com/klepp0/nvim/commit/f39c4321a67c99e8647580a2d28af01253e3f296))
+
+
+
+## [2.4.1](https://github.com/klepp0/nvim/compare/v2.4.0...v2.4.1) (2024-06-20)
+
+
+### Bug Fixes
+
+* pylint recognise activated venv ([176adbe](https://github.com/klepp0/nvim/commit/176adbed631c41f77281ef6b0f8a621cb72a4d38))
+
+
+
 # [2.4.0](https://github.com/klepp0/nvim/compare/v2.3.0...v2.4.0) (2024-06-20)
 
 
