@@ -1,3 +1,12 @@
+# [2.5.0](https://github.com/klepp0/nvim/compare/v2.4.2...v2.5.0) (2024-09-22)
+
+
+### Features
+
+* add ruff and gopls formatting ([1eb83ad](https://github.com/klepp0/nvim/commit/1eb83ad32f1505f6505770ba08dafa02b0b9d7a3))
+
+
+
 ## [2.4.2](https://github.com/klepp0/nvim/compare/v2.4.1...v2.4.2) (2024-09-20)
 
 
