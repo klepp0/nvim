@@ -475,7 +475,8 @@ require("lazy").setup({
     --			--    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
     --		end,
   },
-  { "theprimeagen/harpoon", dependencies = { "nvim-lua/plenary.nvim" } },
+  { "mfussenegger/nvim-dap", dependencies = { "rcarriga/nvim-dap-ui", "theHamsta/nvim-dap-virtual-text", "nvim-neotest/nvim-nio", "mfussenegger/nvim-dap-python", "williamboman/mason.nvim", } },
+  { "theprimeagen/harpoon",  dependencies = { "nvim-lua/plenary.nvim" } },
   { "github/copilot.vim" },
 }, {
   ui = {
