@@ -1,3 +1,12 @@
+# [2.6.0](https://github.com/klepp0/nvim/compare/v2.5.0...v2.6.0) (2024-09-29)
+
+
+### Features
+
+* add debugger ([f495d27](https://github.com/klepp0/nvim/commit/f495d270117a8b1365c40409287ba0cfbc3facb0))
+
+
+
 # [2.5.0](https://github.com/klepp0/nvim/compare/v2.4.2...v2.5.0) (2024-09-22)
 
 
