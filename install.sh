@@ -15,6 +15,15 @@ backup_dir() {
     fi
 }
 
+# Unlink existing symlink
+unlink_dir() {
+    local dir=$1
+    if [ -L ~/$dir ]; then
+        echo "Unlinking ~/$dir"
+        unlink ~/$dir
+    fi
+}
+
 # Function to prompt user for each configuration
 prompt_user() {
     local path=$1
@@ -30,6 +39,7 @@ prompt_user() {
 base_dir=".config/nvim"
 if prompt_user $base_dir "directory"; then
     backup_dir $base_dir
+    unlink_dir $base_dir
     ln -sf $NVIM_DIR ~/$base_dir
     echo "Neovim configurations have been installed successfully."
 else
