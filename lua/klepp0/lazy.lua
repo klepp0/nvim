@@ -229,9 +229,13 @@ require("lazy").setup({
 
   --- Null-LS ---
   {
-    "jose-elias-alvarez/null-ls.nvim",
-    dependencies = { "plenary.nvim" },
+    'jay-babu/mason-null-ls.nvim',
+    dependencies = {
+      'williamboman/mason.nvim',
+      'jose-elias-alvarez/null-ls.nvim',
+    },
   },
+
 
   { -- Autoformat
     "stevearc/conform.nvim",

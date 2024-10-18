@@ -1,96 +1,86 @@
--- Learn the keybindings, see :help lsp-zero-keybindings
--- Learn to configure LSP servers, see :help lsp-zero-api-showcase
-local lsp_zero = require("lsp-zero")
-lsp_zero.preset("minimal")
+-- Import lsp-zero with the 'minimal' preset
+local lsp_zero = require('lsp-zero').preset('minimal')
 
+-- Ensure LSP servers are installed via Mason
 lsp_zero.ensure_installed({
-	"tsserver",   -- TypeScript
-	"eslint",     -- JavaScript
-	"rust_analyzer", -- Rust
-	"pylint",     -- Python
-	"pyright",    -- Python
-	"yamlls",     -- YAML
-	"dockerls",   -- Docker
+	'tsserver',    -- TypeScript
+	'eslint',      -- JavaScript
+	'rust_analyzer', -- Rust
+	'pyright',     -- Python
+	'yamlls',      -- YAML
+	'dockerls',    -- Docker
+})
+
+-- Configure pyright using lsp-zero
+lsp_zero.configure('pyright', {
+	single_file_support = false,
+	filetypes = { 'python' },
 })
 
 -- Fix Undefined global 'vim'
 lsp_zero.nvim_workspace()
 
-local cmp = require("cmp")
+-- Set up completion mappings
+local cmp = require('cmp')
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
 local cmp_mappings = lsp_zero.defaults.cmp_mappings({
-	["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
-	["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
+	['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
+	['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
 })
 
+-- Set preferences for lsp-zero
 lsp_zero.set_preferences({
 	suggest_lsp_servers = false,
 	sign_icons = {
 		error = 'E',
 		warn = 'W',
 		hint = 'H',
-		info = 'I'
-	}
+		info = 'I',
+	},
 })
 
+-- Define on_attach function with key mappings
 lsp_zero.on_attach(function(client, bufnr)
 	local opts = { buffer = bufnr, remap = false }
 
-	vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
-	vim.keymap.set("n", "gD", function() vim.lsp.buf.declaration() end, opts)
-	vim.keymap.set("n", "gr", function() vim.lsp.buf.reference() end, opts)
-	vim.keymap.set("n", "gi", function() vim.lsp.buf.implementation() end, opts)
-	vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
-	vim.keymap.set("n", "<C-k>", function() vim.lsp.buf.signature_help() end, opts)
-	vim.keymap.set("n", "<C-n>", function() vim.diagnostic.goto_next() end, opts)
-	vim.keymap.set("n", "<C-p>", function() vim.diagnostic.goto_prew() end, opts)
+	vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
+	vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
+	vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
+	vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
+	vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
+	vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, opts)
+	vim.keymap.set('n', '<C-n>', vim.diagnostic.goto_next, opts)
+	vim.keymap.set('n', '<C-p>', vim.diagnostic.goto_prev, opts)
 end)
 
--- configure lsp
-local lspconfig = require('lspconfig')
-
-lspconfig.pyright.setup({
-	single_file_support = false,
-	filetypes = { "python" }
-})
-
+-- Initialize lsp-zero
 lsp_zero.setup()
 
+-- Configure diagnostics to show virtual text
 vim.diagnostic.config({
-	virtual_text = true
+	virtual_text = true,
 })
 
--- Setup null-ls
+-- Set up mason-null-ls to manage null-ls sources via Mason
+require('mason-null-ls').setup({
+	ensure_installed = {
+		'ruff',
+	},
+	automatic_installation = true,
+})
+
+-- Import null-ls and build options with lsp-zero
 local null_ls = require('null-ls')
 local null_opts = lsp_zero.build_options('null-ls', {})
 
--- Utility function to get the path of the current virtual environment
-local function get_python_path()
-	local venv_path = os.getenv("VIRTUAL_ENV")
-	if venv_path then
-		return venv_path .. "/bin/python"
-	else
-		return "python"
-	end
-end
-
+-- Set up null-ls with the required sources
 null_ls.setup({
 	on_attach = function(client, bufnr)
 		null_opts.on_attach(client, bufnr)
-		--- you can add more stuff here if you need it
+		-- Add any additional on_attach functionality here
 	end,
 	sources = {
-		null_ls.builtins.diagnostics.pylint.with({
-			command = get_python_path(),
-			args = function(params)
-				return { "-m", "pylint", "--output-format=json", params.bufname }
-			end,
-			format = "json", -- Ensure null-ls expects JSON format
-		}),
-		null_ls.builtins.formatting.black,
-		null_ls.builtins.formatting.isort,
-		null_ls.builtins.formatting.prettier.with({
-			filetypes = { "markdown", "yaml", "javascript", "typescript" },
-		}),
-	}
+		-- Use Ruff as the formatter
+		null_ls.builtins.formatting.ruff,
+	},
 })

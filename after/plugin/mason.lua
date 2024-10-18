@@ -15,6 +15,9 @@ mason.setup({
 			package_uninstalled = "✗",
 		},
 	},
+	ensure_installed = {
+		"pyright",
+	},
 })
 
 mason_lspconfig.setup({
