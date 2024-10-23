@@ -3,12 +3,13 @@ local lsp_zero = require('lsp-zero').preset('minimal')
 
 -- Ensure LSP servers are installed via Mason
 lsp_zero.ensure_installed({
-	'tsserver',    -- TypeScript
-	'eslint',      -- JavaScript
+	'dockerls',   -- Docker
+	'eslint',     -- JavaScript
+	'lua_ls',     -- Lua
+	'pyright',    -- Python
 	'rust_analyzer', -- Rust
-	'pyright',     -- Python
-	'yamlls',      -- YAML
-	'dockerls',    -- Docker
+	'tsserver',   -- TypeScript
+	'yamlls',     -- YAML
 })
 
 -- Configure pyright using lsp-zero
@@ -21,12 +22,12 @@ lsp_zero.configure('pyright', {
 lsp_zero.nvim_workspace()
 
 -- Set up completion mappings
-local cmp = require('cmp')
-local cmp_select = { behavior = cmp.SelectBehavior.Select }
-local cmp_mappings = lsp_zero.defaults.cmp_mappings({
-	['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
-	['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-})
+--local cmp = require('cmp')
+--local cmp_select = { behavior = cmp.SelectBehavior.Select }
+--local cmp_mappings = lsp_zero.defaults.cmp_mappings({
+--	['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
+--	['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
+--})
 
 -- Set preferences for lsp-zero
 lsp_zero.set_preferences({
@@ -64,6 +65,8 @@ vim.diagnostic.config({
 -- Set up mason-null-ls to manage null-ls sources via Mason
 require('mason-null-ls').setup({
 	ensure_installed = {
+		'isort',
+		'prettier',
 		'ruff',
 	},
 	automatic_installation = true,
@@ -80,7 +83,21 @@ null_ls.setup({
 		-- Add any additional on_attach functionality here
 	end,
 	sources = {
-		-- Use Ruff as the formatter
+		null_ls.builtins.formatting.isort,
 		null_ls.builtins.formatting.ruff,
+		null_ls.builtins.formatting.prettier.with({
+			filetypes = {
+				'javascript',
+				'javascriptreact',
+				'typescript',
+				'typescriptreact',
+				'css',
+				'html',
+				'json',
+				'yaml',
+				'markdown',
+				'yaml',
+			},
+		}),
 	},
 })

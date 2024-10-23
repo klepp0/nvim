@@ -17,6 +17,7 @@ mason.setup({
 	},
 	ensure_installed = {
 		"pyright",
+		"debugpy",
 	},
 })
 
