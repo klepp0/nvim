@@ -4,11 +4,9 @@ local lsp_zero = require('lsp-zero').preset('minimal')
 -- Ensure LSP servers are installed via Mason
 lsp_zero.ensure_installed({
 	'dockerls',   -- Docker
-	'eslint',     -- JavaScript
 	'lua_ls',     -- Lua
 	'pyright',    -- Python
 	'rust_analyzer', -- Rust
-	'tsserver',   -- TypeScript
 	'yamlls',     -- YAML
 })
 
@@ -97,6 +95,7 @@ null_ls.setup({
 				'yaml',
 				'markdown',
 				'yaml',
+				'toml',
 			},
 		}),
 	},
