@@ -23,7 +23,10 @@ local themes = require("telescope.themes")
 
 -- [[ Configure Telescope ]]
 -- See `:help telescope` and `:help telescope.setup()`
-telescope.setup({ extensions = { ["ui-select"] = { themes.get_dropdown() } } })
+telescope.setup({
+	extensions = { ["ui-select"] = { themes.get_dropdown() } },
+	pickers = { live_grep = { additional_args = function() return { "-u" } end } },
+})
 
 -- Enable Telescope extensions if they are installed
 pcall(telescope.load_extension, "fzf")
