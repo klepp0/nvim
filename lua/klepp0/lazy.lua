@@ -475,6 +475,19 @@ require("lazy").setup({
     --			--    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
     --		end,
   },
+  {
+    "klepp0/nvim-baml-syntax",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter"
+    },
+    config = function()
+      require("baml_syntax")
+    end,
+  },
+  {
+    'nvim-treesitter/playground',
+    dependencies = { 'nvim-treesitter/nvim-treesitter' }
+  },
   { "mfussenegger/nvim-dap", dependencies = { "rcarriga/nvim-dap-ui", "theHamsta/nvim-dap-virtual-text", "nvim-neotest/nvim-nio", "mfussenegger/nvim-dap-python", "williamboman/mason.nvim", } },
   { "theprimeagen/harpoon",  dependencies = { "nvim-lua/plenary.nvim" } },
   { "github/copilot.vim" },
