@@ -15,6 +15,10 @@ mason.setup({
 			package_uninstalled = "✗",
 		},
 	},
+	ensure_installed = {
+		"pyright",
+		"debugpy",
+	},
 })
 
 mason_lspconfig.setup({
