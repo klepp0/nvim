@@ -1,3 +1,12 @@
+## [2.6.1](https://github.com/klepp0/nvim/compare/v2.6.0...v2.6.1) (2024-12-07)
+
+
+### Bug Fixes
+
+* copilot keymap ([f909279](https://github.com/klepp0/nvim/commit/f909279c6c989287bbf4395fac0a2b1de503fb29))
+
+
+
 # [2.6.0](https://github.com/klepp0/nvim/compare/v2.5.0...v2.6.0) (2024-09-29)
 
 
