@@ -8,6 +8,7 @@ lsp_zero.ensure_installed({
 	'pyright',    -- Python
 	'rust_analyzer', -- Rust
 	'yamlls',     -- YAML
+	"eslint",     -- JavaScript
 })
 
 -- Configure pyright using lsp-zero
@@ -50,6 +51,7 @@ lsp_zero.on_attach(function(client, bufnr)
 	vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, opts)
 	vim.keymap.set('n', '<C-n>', vim.diagnostic.goto_next, opts)
 	vim.keymap.set('n', '<C-p>', vim.diagnostic.goto_prev, opts)
+	vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
 end)
 
 -- Initialize lsp-zero

@@ -520,6 +520,14 @@ require("lazy").setup({
   { "mfussenegger/nvim-dap", dependencies = { "rcarriga/nvim-dap-ui", "theHamsta/nvim-dap-virtual-text", "nvim-neotest/nvim-nio", "mfussenegger/nvim-dap-python", "williamboman/mason.nvim", } },
   { "theprimeagen/harpoon",  dependencies = { "nvim-lua/plenary.nvim" } },
   { "github/copilot.vim" },
+  {
+    "ThePrimeagen/refactoring.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    lazy = false,
+  },
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
