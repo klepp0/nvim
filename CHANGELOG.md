@@ -1,3 +1,13 @@
+# [2.7.0](https://github.com/klepp0/nvim/compare/v2.6.1...v2.7.0) (2025-01-04)
+
+
+### Features
+
+* add primegeans refactoring module ([1250576](https://github.com/klepp0/nvim/commit/125057635595851aaa8b6e678d4d759e566294ad))
+* easy refactoring with variable renaming ([13164e8](https://github.com/klepp0/nvim/commit/13164e895db35aebbba76d0eb873b7d7a25618b9))
+
+
+
 ## [2.6.1](https://github.com/klepp0/nvim/compare/v2.6.0...v2.6.1) (2024-12-07)
 
 
