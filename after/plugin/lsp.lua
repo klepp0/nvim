@@ -4,10 +4,8 @@ local lsp_zero = require("lsp-zero")
 lsp_zero.preset("minimal")
 
 lsp_zero.ensure_installed({
-	"tsserver",   -- TypeScript
 	"eslint",     -- JavaScript
 	"rust_analyzer", -- Rust
-	"pylint",     -- Python
 	"pyright",    -- Python
 	"yamlls",     -- YAML
 	"dockerls",   -- Docker
@@ -44,6 +42,7 @@ lsp_zero.on_attach(function(client, bufnr)
 	vim.keymap.set("n", "<C-k>", function() vim.lsp.buf.signature_help() end, opts)
 	vim.keymap.set("n", "<C-n>", function() vim.diagnostic.goto_next() end, opts)
 	vim.keymap.set("n", "<C-p>", function() vim.diagnostic.goto_prew() end, opts)
+	vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
 end)
 
 -- configure lsp
