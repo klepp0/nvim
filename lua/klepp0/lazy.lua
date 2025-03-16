@@ -481,7 +481,9 @@ require("lazy").setup({
       "nvim-treesitter/nvim-treesitter"
     },
     config = function()
-      require("baml_syntax")
+      require("baml_syntax").setup({
+        format_on_save = true,
+      })
     end,
   },
   {
