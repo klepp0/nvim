@@ -510,15 +510,41 @@ require("lazy").setup({
       "nvim-treesitter/nvim-treesitter"
     },
     config = function()
-      require("baml_syntax")
+      require("baml_syntax").setup({
+        format_on_save = true,
+      })
     end,
   },
   {
     'nvim-treesitter/playground',
     dependencies = { 'nvim-treesitter/nvim-treesitter' }
   },
-  { "mfussenegger/nvim-dap", dependencies = { "rcarriga/nvim-dap-ui", "theHamsta/nvim-dap-virtual-text", "nvim-neotest/nvim-nio", "mfussenegger/nvim-dap-python", "williamboman/mason.nvim", } },
-  { "theprimeagen/harpoon",  dependencies = { "nvim-lua/plenary.nvim" } },
+  { -- Debugger
+    "mfussenegger/nvim-dap",
+    dependencies = {
+      "rcarriga/nvim-dap-ui",
+      "theHamsta/nvim-dap-virtual-text",
+      "nvim-neotest/nvim-nio",
+      "mfussenegger/nvim-dap-python",
+      "williamboman/mason.nvim"
+    },
+  },
+  {
+    "rcarriga/nvim-dap-ui",
+    dependencies = {
+      "mfussenegger/nvim-dap",
+      "nvim-neotest/nvim-nio",
+    },
+  },
+  { -- Python debugger
+    "mfussenegger/nvim-dap-python",
+    ft = "python",
+    dependencies = { "nvim-dap" },
+  },
+  {
+    "theprimeagen/harpoon",
+    dependencies = { "nvim-lua/plenary.nvim" }
+  },
   { "github/copilot.vim" },
   {
     "ThePrimeagen/refactoring.nvim",

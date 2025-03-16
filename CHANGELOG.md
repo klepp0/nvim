@@ -1,3 +1,12 @@
+# [2.8.0](https://github.com/klepp0/nvim/compare/v2.7.0...v2.8.0) (2025-03-16)
+
+
+### Features
+
+* add dap ([886b134](https://github.com/klepp0/nvim/commit/886b1346998cf45d4fa158f96c0443b8cafc8fec))
+
+
+
 # [2.7.0](https://github.com/klepp0/nvim/compare/v2.6.1...v2.7.0) (2025-01-04)
 
 
