@@ -8,13 +8,26 @@ lsp_zero.ensure_installed({
 	'pyright',    -- Python
 	'rust_analyzer', -- Rust
 	'yamlls',     -- YAML
-	"eslint",     -- JavaScript
+	"eslint",     -- JavaScript and TypeScript linting
+	"ts_ls",      -- TypeScript and JavaScript
 })
 
 -- Configure pyright using lsp-zero
 lsp_zero.configure('pyright', {
 	single_file_support = false,
 	filetypes = { 'python' },
+})
+
+-- Configure rust_analyzer using lsp-zero
+lsp_zero.configure('ts_ls', {
+	settings = {
+		javascript = {
+			format = { enable = false }, -- Disable formatting for JavaScript
+		},
+		typescript = {
+			format = { enable = false }, -- Disable formatting for TypeScript
+		},
+	},
 })
 
 -- Fix Undefined global 'vim'
@@ -68,6 +81,7 @@ require('mason-null-ls').setup({
 		'isort',
 		'prettier',
 		'ruff',
+		'taplo'
 	},
 	automatic_installation = true,
 })
@@ -85,6 +99,7 @@ null_ls.setup({
 	sources = {
 		null_ls.builtins.formatting.isort,
 		null_ls.builtins.formatting.ruff,
+		null_ls.builtins.formatting.taplo,
 		null_ls.builtins.formatting.prettier.with({
 			filetypes = {
 				'javascript',
@@ -96,8 +111,6 @@ null_ls.setup({
 				'json',
 				'yaml',
 				'markdown',
-				'yaml',
-				'toml',
 			},
 		}),
 	},
