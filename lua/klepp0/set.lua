@@ -84,3 +84,23 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.highlight.on_yank()
 	end,
 })
+
+vim.api.nvim_create_autocmd("InsertEnter", {
+	pattern = "*",
+	callback = function()
+		if vim.v.event.paste then
+			vim.opt.autoindent = false
+			vim.opt.smartindent = false
+			vim.opt.cindent = false
+		end
+	end,
+})
+
+vim.api.nvim_create_autocmd("InsertLeave", {
+	pattern = "*",
+	callback = function()
+		vim.opt.autoindent = true
+		vim.opt.smartindent = true
+		vim.opt.cindent = true
+	end,
+})
