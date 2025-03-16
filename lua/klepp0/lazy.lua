@@ -479,7 +479,7 @@ require("lazy").setup({
     --			--    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
     --		end,
   },
-  
+
   -- Debugger
   {
     "mfussenegger/nvim-dap",
@@ -545,7 +545,7 @@ require("lazy").setup({
       source = "📄",
       start = "🚀",
       task = "📌",
-      lazy = "💤 ",
+      lazy = "💤",
     },
   },
 })

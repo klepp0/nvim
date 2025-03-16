@@ -71,8 +71,8 @@ vim.opt.smartindent = true
 -- Enable 24-bit RGB color in the TUI
 vim.opt.termguicolors = true
 
--- Set vertical bar at the 100th charactor as orientation for the line length
-vim.opt.colorcolumn = "100"
+-- Set vertical bar at the 120th charactor as orientation for the line length
+vim.opt.colorcolumn = "120"
 
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
