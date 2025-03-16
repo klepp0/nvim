@@ -1,3 +1,12 @@
+## [2.8.1](https://github.com/klepp0/nvim/compare/v2.8.0...v2.8.1) (2025-03-16)
+
+
+### Bug Fixes
+
+* syntax highlighting ([0607a61](https://github.com/klepp0/nvim/commit/0607a61bd99aa28f1e51642b43ab5e2a51064a33))
+
+
+
 # [2.8.0](https://github.com/klepp0/nvim/compare/v2.7.0...v2.8.0) (2025-03-16)
 
 
