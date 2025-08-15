@@ -32,6 +32,10 @@ vim.opt.backup = false
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
+-- Completion UI: make cmp the only popup you see
+vim.opt.completeopt = { "menu", "menuone", "noinsert" } -- or { "menu", "menuone", "noselect" }
+vim.opt.shortmess:append("c")                           -- hide extra completion msgs
+
 -- Keep signcolumn on by default
 vim.opt.signcolumn = "yes"
 

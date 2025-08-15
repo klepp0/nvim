@@ -506,12 +506,14 @@ require("lazy").setup({
   },
   {
     "klepp0/nvim-baml-syntax",
+    dir = "~/dev/nvim-baml-syntax",
+    dev = true,
     dependencies = {
       "nvim-treesitter/nvim-treesitter"
     },
     config = function()
       require("baml_syntax").setup({
-        format_on_save = true,
+        format_on_save = false,
       })
     end,
   },
@@ -553,6 +555,11 @@ require("lazy").setup({
       "nvim-treesitter/nvim-treesitter",
     },
     lazy = false,
+  },
+  {
+    'Aasim-A/scrollEOF.nvim',
+    event = { 'CursorMoved', 'WinScrolled' },
+    opts = {},
   },
 }, {
   ui = {

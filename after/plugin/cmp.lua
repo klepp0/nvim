@@ -11,15 +11,27 @@ cmp.setup({
 		end,
 	},
 	mapping = {
-		--		["<C-d>"] = cmp.mapping.scroll_docs(-4),
-		--		["<C-f>"] = cmp.mapping.scroll_docs(4),
-		--		["<C-Space>"] = cmp.mapping.complete(),
-		--		["<C-e>"] = cmp.mapping.close(),
-		--		["<CR>"] = cmp.mapping.confirm({ select = true }),
+		["<C-n>"] = cmp.mapping(function(fallback)
+			if cmp.visible() then
+				cmp.select_next_item()
+			else
+				fallback() -- falls back to normal <C-n> if no menu
+			end
+		end, { "i", "c" }),
+		["<C-p>"] = cmp.mapping(function(fallback)
+			if cmp.visible() then
+				cmp.select_prev_item()
+			else
+				fallback()
+			end
+		end, { "i", "c" }),
+		["<CR>"] = cmp.mapping.confirm({ select = false }), -- only confirm explicitly selected item
 	},
 	sources = {
 		{ name = "nvim_lsp" },
 		{ name = "luasnip" },
 		{ name = "path" },
 	},
+	preselect = cmp.PreselectMode.None, -- don't auto-select first item (optional)
+	experimental = { ghost_text = false },
 })
