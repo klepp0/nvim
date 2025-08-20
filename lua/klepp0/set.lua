@@ -75,7 +75,7 @@ vim.opt.smartindent = true
 -- Enable 24-bit RGB color in the TUI
 vim.opt.termguicolors = true
 
--- Set vertical bar at the 120th charactor as orientation for the line length
+-- Show a vertical bar at the 120th character as a guideline for line length
 vim.opt.colorcolumn = "120"
 
 -- Highlight when yanking (copying) text
