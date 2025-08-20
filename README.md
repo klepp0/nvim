@@ -45,3 +45,12 @@ To unlock the full potential of Telescope and see the stars (or just find your f
 - [fd](https://github.com/sharkdp/fd): The swift and nimble finder, blessed by the gods of efficiency.
 
 Install these, and you'll be navigating your code like a wizard in no time!
+
+### Diagnostics 🩺
+
+Navigate diagnostics quickly:
+
+- `<C-n>`: Go to next diagnostic message
+- `<C-p>`: Go to previous diagnostic message
+- `<leader>e`: Show diagnostic error messages
+- `<leader>q`: Open diagnostic quickfix list
