@@ -1,3 +1,12 @@
+## [2.8.2](https://github.com/klepp0/nvim/compare/v2.8.1...v2.8.2) (2025-08-20)
+
+
+### Bug Fixes
+
+* **diagnostics:** correct previous diagnostic keymap ([a68341b](https://github.com/klepp0/nvim/commit/a68341b7e07377c274a21bfa2ac86c14e18ed0b8))
+
+
+
 ## [2.8.1](https://github.com/klepp0/nvim/compare/v2.8.0...v2.8.1) (2025-03-16)
 
 
