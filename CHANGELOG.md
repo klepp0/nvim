@@ -1,3 +1,12 @@
+# [2.9.0](https://github.com/klepp0/nvim/compare/v2.8.2...v2.9.0) (2025-09-05)
+
+
+### Features
+
+* configure ruff formatter ([d4ca178](https://github.com/klepp0/nvim/commit/d4ca178ca94244514de4d4500cf03f4203a3e0f5))
+
+
+
 ## [2.8.2](https://github.com/klepp0/nvim/compare/v2.8.1...v2.8.2) (2025-08-20)
 
 
