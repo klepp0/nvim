@@ -1,3 +1,12 @@
+# [2.10.0](https://github.com/klepp0/nvim/compare/v2.9.0...v2.10.0) (2025-09-24)
+
+
+### Features
+
+* add line numbers in file tree ([b0a64f7](https://github.com/klepp0/nvim/commit/b0a64f7054689b5c2b1df930dd98dce5b4212887))
+
+
+
 # [2.9.0](https://github.com/klepp0/nvim/compare/v2.8.2...v2.9.0) (2025-09-05)
 
 
