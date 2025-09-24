@@ -34,7 +34,7 @@ vim.opt.smartcase = true
 
 -- Completion UI: make cmp the only popup you see
 vim.opt.completeopt = { "menu", "menuone", "noinsert" } -- or { "menu", "menuone", "noselect" }
-vim.opt.shortmess:append("c")                           -- hide extra completion msgs
+vim.opt.shortmess:append("c") -- hide extra completion msgs
 
 -- Keep signcolumn on by default
 vim.opt.signcolumn = "yes"
@@ -107,4 +107,12 @@ vim.api.nvim_create_autocmd("InsertLeave", {
 		vim.opt.smartindent = true
 		vim.opt.cindent = true
 	end,
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "netrw",
+  callback = function()
+    vim.opt_local.number = true
+    vim.opt_local.relativenumber = true
+  end,
 })
