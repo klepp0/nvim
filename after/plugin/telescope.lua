@@ -121,3 +121,13 @@ end, { desc = "[S]earch [/] in Open Files" })
 vim.keymap.set("n", "<leader>sn", function()
 	builtin.find_files({ cwd = vim.fn.stdpath("config") })
 end, { desc = "[S]earch [N]eovim files" })
+
+-- Keybinding to list and switch between worktrees
+vim.keymap.set("n", "<leader>gw", function()
+	require("telescope").extensions.git_worktree.git_worktrees()
+end, { desc = "[G]it [W]orktrees" })
+
+-- Keybinding to create a new worktree
+vim.keymap.set("n", "<leader>gc", function()
+	require("telescope").extensions.git_worktree.create_git_worktree()
+end, { desc = "[G]it Worktree [C]reate" })
