@@ -32,4 +32,3 @@ if prompt_user $base_dir "directory"; then
 else
     echo "Uninstallation of $base_dir aborted."
 fi
-

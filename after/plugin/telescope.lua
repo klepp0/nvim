@@ -25,7 +25,11 @@ local themes = require("telescope.themes")
 -- See `:help telescope` and `:help telescope.setup()`
 telescope.setup({
 	extensions = { ["ui-select"] = { themes.get_dropdown() } },
-	pickers = { live_grep = { additional_args = function() return { "-u" } end } },
+	pickers = { live_grep = {
+		additional_args = function()
+			return { "-u" }
+		end,
+	} },
 	defaults = {
 		file_ignore_patterns = { ".git/", ".venv/", "node_modules/", "vendor/" },
 	},
