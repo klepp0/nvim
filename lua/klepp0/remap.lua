@@ -61,6 +61,5 @@ vim.keymap.set({ "n", "v" }, "<leader>p", '"+p', { desc = "Paste from system cli
 vim.keymap.set({ "n" }, "<leader>Y", '"+Y', { desc = "Copy line to system clipboard" })
 vim.keymap.set({ "n" }, "<leader>D", '"+D', { desc = "Delete line and copy to system clipboard" })
 
-
 -- Format code
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
