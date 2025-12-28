@@ -25,13 +25,61 @@ local themes = require("telescope.themes")
 -- See `:help telescope` and `:help telescope.setup()`
 telescope.setup({
 	extensions = { ["ui-select"] = { themes.get_dropdown() } },
-	pickers = { live_grep = {
-		additional_args = function()
-			return { "-u" }
-		end,
-	} },
+	pickers = {
+		live_grep = {
+			-- Removed "-u" to respect .gitignore
+			additional_args = function()
+				return { "--hidden" } -- Search hidden files but respect gitignore
+			end,
+		},
+	},
 	defaults = {
-		file_ignore_patterns = { ".git/", ".venv/", "node_modules/", "vendor/" },
+		-- Patterns are matched against the full relative path
+		file_ignore_patterns = {
+			-- Version Control
+			"%.git/",
+
+			-- Dependencies & Environments
+			"node_modules/",
+			"%.venv/",
+			"vendor/",
+			"__pycache__/",
+			"env/",
+			"venv/",
+
+			-- Lockfiles (highly recommended to ignore for grep)
+			"poetry%.lock",
+			"package%-lock%.json",
+			"yarn%.lock",
+			"pnpm%-lock%.yaml",
+			"composer%.lock",
+			"Cargo%.lock",
+
+			-- Build Output & Cache
+			"dist/",
+			"build/",
+			"target/", -- Rust
+			"bin/",
+			"obj/",
+			"%.next/", -- Next.js
+			"%.cache/",
+
+			-- Logs & Temporary Files
+			"logs/",
+			"%.log",
+			"tmp/",
+			"%.swp",
+			"%.DS_Store",
+
+			-- Media & Binaries
+			"%.png",
+			"%.jpg",
+			"%.jpeg",
+			"%.gif",
+			"%.pdf",
+			"%.zip",
+			"%.tar%.gz",
+		},
 	},
 })
 
