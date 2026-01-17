@@ -45,3 +45,15 @@ To unlock the full potential of Telescope and see the stars (or just find your f
 - [fd](https://github.com/sharkdp/fd): The swift and nimble finder, blessed by the gods of efficiency.
 
 Install these, and you'll be navigating your code like a wizard in no time!
+
+## Tests
+
+This repository includes a small shell test suite using [Bats](https://bats-core.readthedocs.io/).
+Install `bats` and run the tests with:
+
+```sh
+bats tests
+```
+
+The tests simulate a user configuration directory in a temporary location, so they do not
+modify your real `~/.config` directory.
