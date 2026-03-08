@@ -1,4 +1,4 @@
--- split window
+-- Split window
 vim.keymap.set(
 	"n",
 	"<C-x>",
@@ -60,6 +60,3 @@ vim.keymap.set({ "n", "v" }, "<leader>d", '"+d', { desc = "Delete and copy to sy
 vim.keymap.set({ "n", "v" }, "<leader>p", '"+p', { desc = "Paste from system clipboard" })
 vim.keymap.set({ "n" }, "<leader>Y", '"+Y', { desc = "Copy line to system clipboard" })
 vim.keymap.set({ "n" }, "<leader>D", '"+D', { desc = "Delete line and copy to system clipboard" })
-
--- Format code
-vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
