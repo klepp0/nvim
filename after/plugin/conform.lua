@@ -24,10 +24,9 @@ conform.setup({
 
 	-- Formatter-specific config
 	formatters = {
-		-- run Ruff import fixes and code formatter from the project root
 		ruff_fix = {
 			command = "ruff",
-			args = { "--fix", "--select", "I", "--stdin-filename", "$FILENAME", "-" },
+			args = { "check", "--fix", "--select", "I", "--stdin-filename", "$FILENAME", "-" },
 			cwd = util.root_file({ "pyproject.toml", "ruff.toml", ".ruff.toml" }),
 			stdin = true,
 		},
