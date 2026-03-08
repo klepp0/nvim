@@ -1,0 +1,15 @@
+return {
+	require("klepp0.plugins.colorscheme"),
+	require("klepp0.plugins.telescope"),
+	require("klepp0.plugins.lsp"),
+	require("klepp0.plugins.completion"),
+	require("klepp0.plugins.treesitter"),
+	require("klepp0.plugins.dap"),
+	require("klepp0.plugins.git"),
+	require("klepp0.plugins.harpoon"),
+	require("klepp0.plugins.copilot"),
+	require("klepp0.plugins.conform"),
+	require("klepp0.plugins.refactoring"),
+	require("klepp0.plugins.mini"),
+	require("klepp0.plugins.editor"),
+}
