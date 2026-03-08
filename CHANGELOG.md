@@ -1,3 +1,13 @@
+# [2.11.0](https://github.com/klepp0/nvim/compare/v2.10.0...v2.11.0) (2026-03-08)
+
+
+### Features
+
+* add git-worktree plugin ([148a2fd](https://github.com/klepp0/nvim/commit/148a2fdc1ed818a02091e731a16d5eaf66cea30e))
+* switch to maintained git-worktree fork with lazy loading and auto-path ([0ee54c4](https://github.com/klepp0/nvim/commit/0ee54c4d87daeccbebaa5bf73f985e4a7583ccc1))
+
+
+
 # [2.10.0](https://github.com/klepp0/nvim/compare/v2.9.0...v2.10.0) (2025-09-24)
 
 
@@ -374,3 +384,6 @@
 
 * add default config from kickstart.nvim ([e385ea0](https://github.com/klepp0/nvim/commit/e385ea0d7c364aa7f932adba64a118bedd589501))
 * add remaps to quickly access explore command, center cursor automatically ([5b79b43](https://github.com/klepp0/nvim/commit/5b79b4372c3abec50853f524d4d1241a16ef5216))
+
+
+
