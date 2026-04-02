@@ -1,3 +1,12 @@
+## [2.11.2](https://github.com/klepp0/nvim/compare/v2.11.1...v2.11.2) (2026-04-02)
+
+
+### Bug Fixes
+
+* correct vertical bar comment typo ([0ff7740](https://github.com/klepp0/nvim/commit/0ff7740569a9075f38522a3a3620d773c016669d))
+
+
+
 ## [2.11.1](https://github.com/klepp0/nvim/compare/v2.11.0...v2.11.1) (2026-03-08)
 
 
