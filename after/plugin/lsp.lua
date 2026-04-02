@@ -18,7 +18,7 @@ lsp_zero.configure("pyright", {
 	filetypes = { "python" },
 })
 
--- Configure rust_analyzer using lsp-zero
+-- Configure ts_ls (TypeScript server) using lsp-zero
 lsp_zero.configure("ts_ls", {
 	settings = {
 		javascript = {
