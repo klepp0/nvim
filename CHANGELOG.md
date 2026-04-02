@@ -1,3 +1,12 @@
+## [2.11.3](https://github.com/klepp0/nvim/compare/v2.11.2...v2.11.3) (2026-04-02)
+
+
+### Bug Fixes
+
+* clarify ts_ls configuration ([26efb0b](https://github.com/klepp0/nvim/commit/26efb0b80213c4d23a1c31bca8eacd26ed8345b7))
+
+
+
 ## [2.11.2](https://github.com/klepp0/nvim/compare/v2.11.1...v2.11.2) (2026-04-02)
 
 
