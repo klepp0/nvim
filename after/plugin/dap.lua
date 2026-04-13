@@ -64,6 +64,7 @@ end, opts)
 
 dap.listeners.after.event_initialized.dapui_config = function()
 	dapui.open()
+	dap.set_exception_breakpoints({ "raised", "uncaught", "userUnhandled" })
 end
 dap.listeners.before.event_terminated.dapui_config = function()
 	dapui.close()
@@ -71,5 +72,3 @@ end
 dap.listeners.before.event_exited.dapui_config = function()
 	dapui.close()
 end
-
-dap.set_exception_breakpoints({ "raised", "uncaught", "userUnhandled" })
